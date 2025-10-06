@@ -1,0 +1,8 @@
+{
+  "name": "Copy of Copy of Copy of Purple LMS",
+  "description": "A flexible and feature-rich learning management system, featuring role-based access for admins, instructors, and students to manage and consume course content and live webinars.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purple LMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0",
+    "typeorm": "https://aistudiocdn.com/typeorm@^0.3.27",
+    "socket.io": "https://aistudiocdn.com/socket.io@^4.8.1",
+    "uuid": "https://aistudiocdn.com/uuid@^13.0.0",
+    "@prisma/client": "https://aistudiocdn.com/@prisma/client@^6.16.3",
+    "@jest/globals": "https://aistudiocdn.com/@jest/globals@^30.2.0",
+    "src/": "https://aistudiocdn.com/src@^1.1.2/",
+    "@nestjs/websockets": "https://aistudiocdn.com/@nestjs/websockets@^11.1.6",
+    "bcrypt": "https://aistudiocdn.com/bcrypt@^6.0.0",
+    "cookie-parser": "https://aistudiocdn.com/cookie-parser@^1.4.7",
+    "express": "https://aistudiocdn.com/express@^5.1.0",
+    "@google-cloud/storage": "https://aistudiocdn.com/@google-cloud/storage@^7.17.1",
+    "class-validator": "https://aistudiocdn.com/class-validator@^0.14.2",
+    "supertest": "https://aistudiocdn.com/supertest@^7.1.4",
+    "@nestjs/common": "https://aistudiocdn.com/@nestjs/common@^11.1.6",
+    "@nestjs/core": "https://aistudiocdn.com/@nestjs/core@^11.1.6",
+    "@nestjs/jwt": "https://aistudiocdn.com/@nestjs/jwt@^11.0.0",
+    "@nestjs/passport": "https://aistudiocdn.com/@nestjs/passport@^11.0.5",
+    "@nestjs/testing": "https://aistudiocdn.com/@nestjs/testing@^11.1.6",
+    "@nestjs/swagger": "https://aistudiocdn.com/@nestjs/swagger@^11.2.0",
+    "passport-jwt": "https://aistudiocdn.com/passport-jwt@^4.0.1",
+    "@nestjs/config": "https://aistudiocdn.com/@nestjs/config@^4.0.2"
+  }
+}
+</script>
+    <style>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fadeIn 0.4s ease-out forwards;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      @keyframes watermarkDrift {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(10px, 5px); }
+        50% { transform: translate(-5px, -10px); }
+        75% { transform: translate(5px, -5px); }
+        100% { transform: translate(0, 0); }
+      }
+      .animate-watermark-drift {
+        animation: watermarkDrift 20s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
